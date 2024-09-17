@@ -1,0 +1,310 @@
+<body link="#000" vlink="#000" alink="#000" style="background-color:#F4F7FA;">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+       
+        @media only screen and (max-width: 600px) {
+            .main {
+                width: 100%;
+                max-width: 320px !important;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .top-image {
+                width: 100% !important;
+            }
+
+            .inside-footer {
+                max-width: 320px !important;
+                width: 100%;
+            }
+
+            table[class="contenttable"] {
+                width: 100%;
+                max-width: 320px !important;
+                text-align: left !important;
+            }
+
+            td[class="force-col"] {
+                display: block !important;
+            }
+
+            td[class="rm-col"] {
+                display: none !important;
+            }
+
+            .mt {
+                margin-top: 15px !important;
+            }
+
+            *[class].width300 {
+                width: 255px !important;
+            }
+
+            *[class].block {
+                display: block !important;
+            }
+
+            *[class].blockcol {
+                display: none !important;
+            }
+
+            .emailButton {
+                width: 100% !important;
+            }
+
+            .emailButton a {
+                display: block !important;
+                font-size: 18px !important;
+            }
+        }
+     
+    </style>
+    
+    <table class="main contenttable" align="center" width="100%"
+        style="font-weight: normal; background-color:#ffffff;font-family:'Poppins', sans-serif;border-collapse: collapse;border: 0;margin-left: auto;margin-right: auto; margin-top:40px; padding: 0;color: #555559;font-size: 16px;max-width: 600px;">
+   
+        <tr>
+            <td>
+                <table class="main contenttable" height="60px" width="100%"
+                    style="font-weight: normal; background:#0d0b36;font-family:'Poppins', sans-serif;border-collapse: collapse;border: 0;  padding: 0; color: #555559;font-size: 16px;line-height: 26px; max-width: 600px;">
+                    <tr style="text-align: left; " >
+                     
+                        <td valign="top" class="image-section"
+                            style="padding-top: 20px; padding-bottom:20px; padding-left: 15px; padding-right:15px;width: 20%;">
+                            <a href="https://mintyn.com/" style="text-decoration: none;display:flex; justify-content:space-between">
+                                <img class="top-image" src="https://ik.imagekit.io/snw0wewi2/sandbox/Frame%201412069716%20(1).png?updatedAt=1726543013089"
+                                    style="max-width: 150px; max-height: 50px; margin-bottom: -10px;" alt="Afrione bank">
+                        </td>
+                       	<td
+									 style="color:white;font-size:18px;font-weight:bold;width: 80%; text-align:right; padding-right:15px;"
+									>
+										<p>Transaction Receipt</p>
+									</td>
+                       
+                    </tr>
+                   
+                </table>
+                <!--[if gte MSO 9]>
+  <table width="640">
+     <tr>
+        <td>
+<![endif]-->
+  <table width="100%" style="max-width:640px;">
+    <tr>
+        <td class="image-section"
+        style="padding: 45px 15px;padding-bottom: 10px; text-align:center">
+           <div style="background:#f6f8fa;color:#232730; text-align:center; width:150px;  margin:0px auto; border-radius:32px;">Transaction Type</div>
+           <h3 style="font-size:24px; margin-top:5px">AFR {{amountInAfr}}</h3>
+           <p style="margin-top:-20px">= {{currency}} {{currencyAmount}} </p>
+    </td>
+    </tr>
+  </table>
+<!--[if gte MSO 9]>
+      </td>
+    </tr>
+  </table>
+<![endif]-->
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <table class="main contenttable" align="center" 
+                    style="font-weight: normal; background-color:#ffffff; width:100%;font-family:'Poppins', sans-serif;border-collapse: collapse;border: 2px;border-color:red; padding:10px; margin-left: auto;margin-right: auto; margin-top: 20px;  ;color: #555559;font-size: 16px;line-height: 26px;max-width: 500px;">
+                                <tr>
+									<td
+										style="
+											background-color: #f6f8fa;
+											padding: 4px 5px;
+											border-radius: 8px 0px 0px 8px;
+											width: 20%;
+										"
+									>
+										<p style="font-size: 12px">Beneficiary Name</p>
+									</td>
+									<td
+										style="
+											background-color: #f6f8fa;
+											padding: 4px 5px;
+											border-radius: 0px 8px 8px 0px;
+											width: 80%;
+										"
+									>
+										<p style="font-size: 14px; font-weight:600; text-align:right; font-weight: 400">{{beneficiaryName}}</p>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding: 2px 0px"></td>
+								</tr>
+								<tr>
+									<td
+										style="
+											background-color: #f6f8fa;
+											padding: 5px 4px;
+											border-radius: 8px 0px 0px 8px;
+											width: 35%;
+										"
+									>
+										<p style="font-size: 12px">Beneficiary Email</p>
+									</td>
+									<td
+										style="
+											background-color: #f6f8fa   ;
+											padding: 5px 4px;
+											border-radius: 0px 8px 8px 0px;
+											width: 65%;
+										"
+									>
+										<p style="font-size: 14px; font-weight:600; text-align:right;  font-weight: 400">{{beneficiaryEmail}}</p>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding: 2px 0px"></td>
+								</tr>
+								<tr>
+									<td
+										style="
+											background-color: #f6f8fa;
+											padding: 5px 4px;
+											border-radius: 8px 0px 0px 8px;
+											width: 35%;
+										"
+									>
+										<p style="font-size: 12px">Date & Time</p>
+									</td>
+									<td
+										style="
+											background-color: #f6f8fa   ;
+											padding: 5px 4px;
+											border-radius: 0px 8px 8px 0px;
+											width: 65%;
+										"
+									>
+										<p style="font-size: 14px; font-weight:600; text-align:right;  font-weight: 400">{{dateAndTime}}</p>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding: 2px 0px"></td>
+								</tr>
+								<tr>
+									<td
+										style="
+											background-color: #f6f8fa;
+											padding: 5px 4px;
+											border-radius: 8px 0px 0px 8px;
+											width: 35%;
+										"
+									>
+										<p style="font-size: 12px">Reference Number</p>
+									</td>
+									<td
+										style="
+											background-color: #f6f8fa   ;
+											padding: 5px 4px;
+											border-radius: 0px 8px 8px 0px;
+											width: 65%;
+										"
+									>
+										<p style="font-size: 14px; font-weight:600; text-align:right;  font-weight: 400">{{referenceNumber}}</p>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding: 2px 0px"></td>
+								</tr>
+								<tr>
+									<td
+										style="
+											background-color: #f6f8fa;
+											padding: 5px 4px;
+											border-radius: 8px 0px 0px 8px;
+											width: 35%;
+										"
+									>
+										<p style="font-size: 12px">Phone Number</p>
+									</td>
+									<td
+										style="
+											background-color: #f6f8fa   ;
+											padding: 5px 4px;
+											border-radius: 0px 8px 8px 0px;
+											width: 65%;
+										"
+									>
+										<p style="font-size: 14px; font-weight:600; text-align:right;  font-weight: 400">{{phoneNumber}}</p>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding: 2px 0px"></td>
+								</tr>
+								<tr>
+									<td
+										style="
+											background-color: #f6f8fa;
+											padding: 5px 4px;
+											border-radius: 8px 0px 0px 8px;
+											width: 35%;
+										"
+									>
+										<p style="font-size: 12px">Status</p>
+									</td>
+									<td
+										style="
+											background-color: #f6f8fa   ;
+											padding: 5px 4px;
+											border-radius: 0px 8px 8px 0px;
+											width: 65%;
+                                            color:#2b2e34;
+										"
+									>
+										<p style="font-size: 14px; font-weight:600; text-align:right;  font-weight: 400">{{completed}}</p>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding: 2px 0px"></td>
+								</tr>
+								
+                     </table>
+                    
+            
+   <tr style="text-align: center;">
+            <td align="center">
+                <hr style="height: 1px; width: 80%; border: none; color:#E8E7EA; background-color:#E8E7EA; margin-top: 50px;" />
+                <div style="padding-top: 20px;">
+                     <div>
+                        <a href="twitter.com/mintynapp" style="text-decoration: none; padding: 10px 10px 0px 0px;">
+                            <img src="https://ik.imagekit.io/snw0wewi2/sandbox/twitter.png?updatedAt=1726562218094" alt="twitter"
+                            style="width: 18px; height:18px;">
+                        </a>
+                          <a href="linkedin.com/company/mymintapp" style="text-decoration: none; padding: 10px 0px 0px 10px;">
+                            <img src="https://ik.imagekit.io/snw0wewi2/sandbox/linkinin.png?updatedAt=1726562218126" alt="linkedin"
+                            style="width: 18px; height:18px;">
+                        </a>
+                        <a href="instagram.com/mintynapp" style="text-decoration: none; padding: 10px 10px 0px 10px;">
+                            <img src="https://ik.imagekit.io/snw0wewi2/sandbox/instagram.png?updatedAt=1726562218039" alt="instagram"
+                            style="width: 18px; height:18px;">
+                        </a>
+                        <a href="facebook.com/mintynapp" style="text-decoration: none; padding: 10px 10px 0px 10px;">
+                            <img src="https://ik.imagekit.io/snw0wewi2/sandbox/facebook.png?updatedAt=1726562218068" alt="facebook"
+                            style="width: 18px; height:18px;">
+                        </a>
+                        
+                      
+                    </div>
+                    <div>
+                        <a style="color:#375DFB; text-decoration:none;" href="tel:07007730000">07007730000</a> |
+                        
+                        <a style="color:#375DFB; text-decoration:none;"  href="www.afrione.org">www.afrione.org </a> |
+                        
+                        <a style="color:#375DFB; text-decoration:none;"  href="mailto:@afrioneorg">@afrioneorg</a>
+                    </div>
+                    <p style="color: #868C98;font-size: 0.9rem; font-weight:bold;letter-spacing: 0.25px;">
+                      © 2024 Afrione limited. All right reserved
+                    </p>
+                  
+                   
+                </div>
+            </td>
+        </tr>
+ </table>
+   
+</body>
